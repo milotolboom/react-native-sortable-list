@@ -263,7 +263,7 @@ export default class SortableList extends Component {
           location={location}
           onLayout={!rowsLayouts ? this._onLayoutRow.bind(this, key) : null}
           onActivate={this._onActivateRow.bind(this, key, index)}
-          onPress={this._onPressRow.bind(this, key)}
+          onPress={this._onPressRow.bind(this, data[key])}
           onRelease={this._onReleaseRow.bind(this, key)}
           onMove={this._onMoveRow}
           manuallyActivateRows={this.props.manuallyActivateRows}>
